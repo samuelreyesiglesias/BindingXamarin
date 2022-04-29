@@ -1,4 +1,4 @@
-﻿using App2.ViewModels;
+﻿ 
 using App2.Views;
 using System;
 using System.Collections.Generic;
@@ -10,9 +10,7 @@ namespace App2
     {
         public AppShell()
         {
-            InitializeComponent();
-            Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
-            Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
+            InitializeComponent(); 
         }
 
         private async void OnMenuItemClicked(object sender, EventArgs e)

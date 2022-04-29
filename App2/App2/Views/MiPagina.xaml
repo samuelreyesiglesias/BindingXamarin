@@ -16,6 +16,7 @@
             <Entry Placeholder="Escriba su apellido" HorizontalOptions="CenterAndExpand" Text="{Binding Surname}"></Entry>
 
                 <Button   Text="Mostrar" Command="{Binding Comando }"></Button>
+                <Button   Text="SQLite" Command="{Binding Ir }"></Button>
             
         </StackLayout>
         </ScrollView>

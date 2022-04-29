@@ -13,7 +13,7 @@ namespace App2
         {
             InitializeComponent();
 
-            DependencyService.Register<MockDataStore>();
+            //DependencyService.Register<MockDataStore>();
             MainPage = new MiPagina();
         }
 
