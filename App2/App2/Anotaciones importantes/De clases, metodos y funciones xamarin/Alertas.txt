@@ -1,0 +1,26 @@
+﻿ 
+ //Alerta de si y no
+ bool answer = await DisplayAlert ("Question?", "Would you like to play a game", "Yes", "No");
+  Debug.WriteLine ("Answer: " + answer);
+
+
+  //Alerta de tipo string
+
+   string action = await DisplayActionSheet ("ActionSheet: Send to?", "Cancel", null, "Email", "Twitter", "Facebook");
+  Debug.WriteLine ("Action: " + action);
+
+
+
+  //url para estudiar mas pop ups
+  https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/pop-ups
+
+
+
+
+
+
+You can use UserDialogs libary
+
+After initialization simply use:
+
+UserDialogs.Instance.Alert("message")

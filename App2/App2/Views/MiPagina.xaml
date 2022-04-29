@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.Views.MiPagina"  xmlns:MyPersonalData="clr-namespace:App2.Services"
+             >
+    <ContentPage.BindingContext>
+        <MyPersonalData:Class1></MyPersonalData:Class1>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+             
+            <Label Text="Escriba su nombre" HorizontalOptions="CenterAndExpand" TextColor="black" FontSize="24"></Label>
+            <Entry Placeholder="Escriba su nombre" HorizontalOptions="CenterAndExpand" Text="{Binding Name}"></Entry>
+            <Label Text="Escriba su apellido" HorizontalOptions="CenterAndExpand" TextColor="black" FontSize="24"></Label>
+            <Entry Placeholder="Escriba su apellido" HorizontalOptions="CenterAndExpand" Text="{Binding Surname}"></Entry>
+
+                <Button   Text="Mostrar" Command="{Binding Comando }"></Button>
+            
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
